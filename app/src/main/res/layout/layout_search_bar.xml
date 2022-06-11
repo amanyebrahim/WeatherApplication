@@ -1,0 +1,51 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="actionTextChanged"
+            type="androidx.databinding.adapters.TextViewBindingAdapter.AfterTextChanged" />
+        <variable
+            name="mutableName"
+            type="androidx.lifecycle.LiveData&lt;String>" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_700"
+        android:minHeight="?attr/actionBarSize">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_search"
+            style="@style/TextInputEditText"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="10dp"
+            android:afterTextChanged="@{actionTextChanged}"
+            android:background="@drawable/bg_search_white_rounded"
+            android:drawableStart="@drawable/ic_baseline_search_24"
+            android:drawablePadding="15dp"
+            android:imeOptions="actionDone"
+            android:hint="@string/search"
+            android:maxLines="1"
+            android:inputType="text"
+            android:paddingStart="14dp"
+            android:paddingBottom="4dp"
+            android:paddingTop="4dp"
+            android:paddingEnd="34dp"
+            android:textColorHint="@color/purple_700"
+            app:drawableTint="@color/purple_700"
+            android:completionThreshold="3"
+            app:mutableText="@{mutableName}"
+            android:popupBackground="@drawable/bg_search_white_rounded"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

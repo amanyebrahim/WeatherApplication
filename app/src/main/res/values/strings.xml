@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">WeatherApplication</string>
+    <string name="connection_error">Cannot connect to server. Please check your Internet connection and try again.</string>
+    <string name="unknown_error">An unknown error occurred!</string>
+    <string name="error_login">Error while login!</string>
+    <string name="session_expired">Your login session has been expired.\nPlease login again.</string>
+    <string name="server_error">Our server is having a problem. We\'re working to fix it as soon as we can, so try again in a few minutes.</string>
+    <string name="search">Search</string>
+    <string name="weather">Weather</string>
+    <string name="pressure">Pressure</string>
+    <string name="temp">Temperature</string>
+    <string name="wind_speed">WindSpeed</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
+    <string name="alert_gps">You Need to Open GPs To Get Weather Status Go To Settings ?</string>
+
+</resources>
