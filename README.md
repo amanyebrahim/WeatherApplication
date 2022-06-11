@@ -1,6 +1,6 @@
 # WeatherApplication
 
-App demonstrating Clean Architecture using Coroutines and Android Jetpack Components (MVVM , Binding, Live Data)
+App demonstrating Clean Architecture using Coroutines and Android Jetpack Components (MVVM , Binding,coroutines, Live Data)
 
 # ScreenShots
 
